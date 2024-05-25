@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.chatbot-button {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  z-index: 1000;
+  padding: 10px 30px;
+  background-color: #1913c0;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.chatbot-button:hover {
+  background-color: #6aaaee;
+}
+
+.chatbot-container {
+  position: fixed;
+  bottom: 100px; /* Adjust as needed */
+  right: 20px;  /* Adjust as needed */
+  z-index: 1000; /* Ensure it's on top of other elements */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow for better visibility */
+}
+
+
+
+.border-effect {
+  position: relative;
+  display: inline-block;
+}
+
+.border-effect:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: #6811f5;
+  transition: width 0.3s ease, left 0.3s ease, transform 0.3s ease;
+  margin: 2px 2px 2px 2px;
+  transform: translate(10%, -10%);
+}
+
+.border-effect:hover:before {
+  width: 80%;
+  left: 0;
+}

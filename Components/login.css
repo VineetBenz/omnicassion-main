@@ -1,0 +1,143 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #869ec2;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Login Box */
+.login-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Login Options and Manual Login */
+.login-options,
+.manual-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Login Options */
+.login-options {
+  margin-right: 2rem;
+}
+
+.social-login {
+  width: 200px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.facebook { background-color: #3b5998; }
+.twitter { background-color: #1da1f2; }
+.google { background-color: #db4437; }
+
+.social-login:focus {
+  outline: 2px solid #000;
+}
+
+/* Divider */
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 2rem;
+  color: #888;
+  font-weight: bold;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+  margin: 0 1rem;
+}
+
+/* Manual Login */
+.manual-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-input {
+  width: 250px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Remember Me */
+.remember-me {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.remember-me input {
+  margin-right: 0.5rem;
+}
+
+/* Login Button */
+.login-button {
+  width: 100%;
+  padding: 1rem;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #d32f2f;
+}
+
+.login-button:focus {
+  outline: 2px solid #000;
+}
+
+/* Login Links */
+.login-links {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.login-links a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.login-links a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
